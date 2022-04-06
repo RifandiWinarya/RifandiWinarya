@@ -1,0 +1,7 @@
+STRUK PEMBELIAN KELOMPOK JERUK 
+Yang dibeli : 
+  Ayam Goreng  -> 0
+  Ayam Bakar   -> 3
+Harga total Rp. 63000
+Diskon      Rp. 6300
+Harga Bayar Rp. 56700
