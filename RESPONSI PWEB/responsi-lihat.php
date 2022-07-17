@@ -1,8 +1,8 @@
 <?php
-    echo "<HEAD><TITLE>my guest book</HEAD></TITLE>";
+    echo "<HEAD><TITLE>TABLE PESANAN</HEAD></TITLE>";
     $fp = fopen("responsi.txt","r");
     echo "<center>";
-    echo "<h1>Tabel Guestbook</H1>";
+    echo "<h1>Tabel Pesanan</H1>";
     echo "<table border=1>";
     echo "<tr>";
     echo "<td width=200px>TANGGAL MENGISI</td><td width=100px>NAMA</td><td width=200px>NOMOR
