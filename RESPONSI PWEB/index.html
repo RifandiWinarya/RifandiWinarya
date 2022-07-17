@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>BARBERSHOP</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+        <style>
+            body{
+                background: url('background.png');
+            }
+            .form{
+                background-color: blueviolet;
+                width: 500px;
+                left: 25%;
+                position: relative;
+                margin-left: 3em;
+            }
+            .kirim{
+                background: green;
+                color: white;
+                border: none;
+                margin-right: 10px;
+            }
+            .batal{
+                background: red;
+                color: white;
+                border: none;
+            }
+            .buku{
+                text-decoration: none;
+                background: wheat;
+                color: black;
+            }
+        </style>
+        <script>
+ 
+            function harusAngka(evt){
+                var charCode = (evt.which) ? evt.which : event.keyCode
+                if ((charCode < 48 || charCode > 57)&&charCode>32)
+                return false;
+                return true;
+            }
+        </script>
+    </head>
+    <body>
+        <div align="center"><strong><font size="6" face="Courier New, Courier, mono">SELAMAT DATANG DI BARBERSHOP <br>SILAHKAN ISI KAPAN ANDA AKAN DATANG</font></strong></div>
+        <div class="form">
+            <form name="form1" method="post" action="responsi-proses.php">
+                <table width="58%" border="0" align="center">
+                <tr>
+                    <td>Nama Lengkap </td>
+                    <td><input name="nama" type="text" id="nama" ></td>
+                </tr>
+    
+                <tr>
+                    <td>Nomor Telpon </td>
+                    <td><input name="nomor" type="text" id="nomor" onkeypress='return harusAngka(event)'></td>
+                </tr>
+    
+                <tr>
+                    <td>Harga Service</td>
+                    <td><select name="status" id="status">
+                    <option>25.000</option>
+                    <option>50.000</option>
+                    <option>100.000</option>
+                    </select></td>
+                </tr>
+    
+                <tr>
+                    <td>Tanggal Pesanan</td>
+                    <td><input type="date" name="tanggal" id="tanggal"/></td>
+                </tr>
+    
+                <tr>
+                    <td>&nbsp;</td>
+                    <td><input type="submit" name="Submit" value="Kirim" class="kirim" ><input type="reset" name="Submit2" value="Batal" class="batal"></td>
+                </tr>
+                </table>
+            </form>
+        </div>
+        
+        <div align="center"><strong><a href="responsi-lihat.php" class="buku">::LIHAT TABLE PESANAN::</a></strong></div>
+    </body>
+</html>
